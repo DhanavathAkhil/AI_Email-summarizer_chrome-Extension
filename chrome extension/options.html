@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Email Summarizer – Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>API Settings</h1>
+    <p class="muted">Optional: add your OpenAI-compatible API key to enable AI summaries. Stored locally via <code>chrome.storage.sync</code>.</p>
+    <div class="row">
+      <label>OpenAI API Key</label>
+      <input id="key" placeholder="sk-...">
+    </div>
+    <div class="row">
+      <button id="save">Save</button>
+      <button id="clear" class="secondary">Clear</button>
+    </div>
+    <p class="muted">Privacy: Your key is only used from your browser to call the provider. This extension never sends your key anywhere else.</p>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
